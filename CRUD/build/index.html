@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD GUI Interface</title>
+  <style>
+    body {
+      background-color: #212121;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #fff;
+      text-align: center;
+    }
+
+    form {
+      position: relative;
+      background-color: #776c6c;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #5d5d5d;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    .entry-fields {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .entry-index {
+      font-size: 16px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      display: block;
+      width: 90%;
+      height: 40px;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    /* CSS for entry divs */
+    .entry {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: #DDD;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .entry > * {
+      margin: 10px;
+    }
+
+    .entry-number {
+      font-weight: bold;
+      color: #776c6c;
+    }
+
+    /* CSS for submit button and navigation bar */
+    .nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #776c6c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .submit-button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .submit-button:hover {
+      background-color: #3e8e41;
+    }
+    button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .tabs {
+      background-color: #4CAF50; /* Set the background color */
+      color: white; /* Set the text color */
+      padding: 12px 24px; /* Set the padding */
+      border: none; /* Remove borders */
+      border-radius: 8px; /* Rounded corners */
+      text-align: center; /* Center text */
+      text-decoration: none; /* Remove underline */
+      display: inline-block; /* Make the button a block element */
+      font-size: 16px; /* Set the font size */
+      cursor: pointer; /* Change cursor on hover */
+    }
+    .tabs:hover {
+      background-color: #3e8e41; /* Darken the background color on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>CRUD GUI Interface</h1>
+    <button onclick="window.location.href='data.php'" class="tabs">View users</button>
+    <!-- <button onclick="window.location.href='page2.html'">Go to Page 2</button> -->
+
+    <form method="post" action="">
+      <div class="input-group">
+        <div class="entry-header">
+          <span class="entry-fields">Name:</span>
+        </div>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <div class="entry-header">
+          <span class="entry-fields">Surname:</span>
+        </div>
+        <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+      </div>
+      <div class="submit-bar">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+
+</html>

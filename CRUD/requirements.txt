@@ -1,0 +1,9 @@
+fastapi
+pymongo
+uvicorn
+graphene
+starlette
+starlette_graphene3
+python-multipart
+graphene-mongo
+mongoengine
